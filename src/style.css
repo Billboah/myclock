@@ -1,0 +1,357 @@
+*{
+              margin: 0;
+              padding: 0;
+              box-sizing: inherit;
+}
+
+html {
+              height: 100%;
+              box-sizing: border-box;
+}
+
+body {  
+              background-image: url(https://wallpaperaccess.com/full/1131217.jpg);
+              background-color: aquamarine;
+              background-repeat: no-repeat;
+              height: 100vh;
+              background-size: cover;   
+              margin: 0;
+              padding: 0;
+              font-family: sans-serif, 'inherit', 'Times New Roman', Times, serif;  
+             
+}
+
+.clock-app{
+              height: 100%;
+              overflow-y: scroll;
+              padding: 0;
+              display:flex;
+              flex-direction: column;
+              justify-content: space-between;
+              padding-bottom: 0;
+              margin-bottom: 0;
+}
+
+.app {
+              color: white; 
+              margin: 0px;
+              padding-right: 5%;
+              padding-left: 10%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              padding-top: 3%;
+              padding-bottom: 7%;
+              height: 100%;
+}
+
+
+.discription {
+              width: 60%;
+              display: block;
+}
+
+.author {
+              padding: 5px 0;
+}
+.time_section {
+              display: flex;
+              justify-content: space-between;
+}
+
+.button {
+              display: flex;
+              align-items: flex-end;
+}
+
+.day {
+              display: flex;
+              padding: 0;
+              margin: 0;
+              font-size: 20px;
+}
+
+.time {
+              display: flex;
+              
+}
+
+.per-sec, .hour-mun {
+              display: flex;
+              align-items: center;
+}
+
+.hours, .minutes, .dots {
+              font-size: 200px;
+              font-weight: bold;
+}
+
+
+img {
+              height: 20px;
+}
+
+.day_time{
+              padding-left: 10px;
+              padding-right: 10px;
+}
+
+.location {
+              font-weight: bolder;
+              font-size: 25px;
+}
+
+.second {
+              display: flex;
+              flex-direction: column;
+              font-size: 40px;
+              padding: 50%;
+              height: 100%;
+              justify-content: space-between;
+}
+
+
+
+.expand {
+              height: 55px;
+              width: 150px;
+              border: none;
+              border-radius: 30px;
+              color: rgba(0, 0, 0, 0.6);
+              font-size: 20px;
+              display: flex;
+              justify-content: space-evenly;
+              font-weight: bold;
+              align-items: center;
+              cursor: pointer;
+}
+
+.arrow {
+              background-color: rgba(0, 0, 0, 0.7);
+              border-radius: 50%;
+              height: 45px;
+              width: 45px;
+              padding: 5px;
+}
+
+.arrow:hover{
+              background-color:rgba(0, 0, 0, 0.3) ;
+}
+
+.location{
+              display: flex;
+              justify-content: space-between;
+}
+
+.city{
+              text-transform: uppercase;
+}
+
+.expand {
+              text-transform: uppercase;
+}
+
+.details {
+              padding: 90px 5% 60px 10%;
+              background-image:none;
+              background-color: rgb(200,200,200);
+              display: none;     
+              height: 50%;       
+}
+
+ul {
+              list-style-type: none;
+              display: grid;
+              grid-template-columns: 60% 40%;
+              row-gap: 50px;
+}
+
+p {
+              font-size: 60px;
+              margin: 0;
+              font-weight: bold;
+              padding-top: 10px;
+}
+
+ul h2 {
+              font-weight: normal; 
+              font-size: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+                            .app {
+                                          padding-right: 120px;
+                                          display: flex;
+                                          flex-direction: column;
+                                          justify-content: space-between;
+                                          height: 100%;
+                                          place-items: center;
+                                          padding-right: 5%;
+                                          padding-left: 10%;
+                            }
+                            
+              
+                            .hours, .minutes, .dots {
+                                          font-size: 100px;
+                                          font-weight: bold;
+                            }
+              
+                            img {
+                                          height: 15px;
+                            }
+              
+                            .location {
+                                          font-weight: bolder;
+                                          font-size: 20px;
+                            }
+              
+                            .day {
+                                          display: flex;
+                                          padding: 0;
+                                          margin: 0;
+                                          font-size: 15px;
+                            }
+              
+                            .second {
+                                          display: flex;
+                                          flex-direction: column;
+                                          font-size: 30px;
+                                          padding: 15px;
+                                          justify-content: space-between;
+                            }
+              
+                            .expand {
+                                          height: 35px;
+                                          width: 100px;
+                                          border: none;
+                                          border-radius: 15px;
+                                          color: rgba(0, 0, 0, 0.6);
+                                          font-size: 15px;
+                                          display: flex;
+                                          justify-content: space-evenly;
+                                          font-weight: bold;
+                                          align-items: center;
+                                          cursor: pointer;
+                            }
+                            ul {
+                                          list-style-type: none;
+                                          display: flex;
+                                          flex-direction: column;
+                            }
+
+                            .arrow {
+                                          height: 30px;
+                                          width: 30px;
+                                          padding: 5px;
+                            }
+
+                            .details {
+                                          padding: 90px 20% 60px 20%;
+                                          background-image:none;
+                                          background-color: rgb(200,200,200);
+                                          display: none;   
+                                          height: 60%; 
+                                          overflow-y: scroll;        
+                            }
+ }
+
+@media screen and (max-height: 680px) {
+              .app {
+                            padding-right: 120px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 100%;
+                            padding-right: 5%;
+                            padding-left: 10%;
+              }
+              
+
+              .hours, .minutes, .dots {
+                            font-size: 100px;
+                            font-weight: bold;
+              }
+
+              img {
+                            height: 15px;
+              }
+
+              .location {
+                            font-weight: bolder;
+                            font-size: 20px;
+              }
+
+              .day {
+                            display: flex;
+                            padding: 0;
+                            margin: 0;
+                            font-size: 15px;
+              }
+
+              .second {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 30px;
+                            padding: 15px;
+                            justify-content: space-between;
+              }
+
+              .expand {
+                            height: 35px;
+                            width: 100px;
+                            border: none;
+                            border-radius: 15px;
+                            color: rgba(0, 0, 0, 0.6);
+                            font-size: 15px;
+                            display: flex;
+                            justify-content: space-evenly;
+                            font-weight: bold;
+                            align-items: center;
+                            cursor: pointer;
+              }
+
+              .arrow {
+                            height: 30px;
+                            width: 30px;
+                            padding: 5px;
+              }
+
+              ul {
+                            list-style-type: none;
+                            display: grid;
+                            grid-template-columns: 60% 40%;
+                            row-gap: 50px;
+              }
+
+              .details {
+                            padding: 90px 20% 60px 20%;
+                            background-image:none;
+                            background-color: rgb(200,200,200);
+                            display: none;   
+                            height: 60%; 
+                            overflow-y: scroll;        
+              }
+}
+
+@media screen and (max-height: 680px) and  (max-width: 800px) {
+              ul {
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: column;
+              }
+}
+
+ @media screen and (max-width: 470px){
+              .time_section {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+              }
+
+              .app{
+                            padding-right: 0;
+                            padding-left: 0;
+              }
+ }
+

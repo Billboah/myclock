@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time machine</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <Link rel="stylesheet" href="./style.css">
+  </Link>
+</head>
+
+<body>
+  <div class="clock-app">
+    <div class="app">
+      <div class='discription'>
+        <section class="sections">
+          <div class="text">Genius is one percent inspiration and ninety-nine percent perspiration.</div>
+          <h2 class="author">Thomas Edison</h2>
+        </section>
+      </div>
+      <div class="time_section">
+        <section>
+          <div class="sections">
+            <div class="day">
+              <span><img src="../assets/icon-sun.svg" class="icon" /></span>
+              <span class="day_time"> GOOD EVENING, </span>
+              <span>IT'S CURRENTLY</span>
+            </div>
+            <div class="time">
+              <div class="hour-mun">
+                <span class="hours">00</span>
+                <span class="dots">:</span>
+                <span class="minutes">00</span>
+              </div>
+              <div class="per-sec">
+                <span class="second">
+                  <div class="period">AM</div>
+                  <div class="seconds">00</div>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="sections location">
+            <div class="city"></div>
+          </div>
+        </section>
+        <section class="button">
+          <button class="expand">more<img
+              src="https://images.squarespace-cdn.com/content/v1/5a593284a8b2b0e04f3568f0/1534374735178-B3SM4ABNOKKQSSU8NYHS/arrow-down.png"
+              alt="arrow icon" aria-hidden="true" class="arrow" />
+          </button>
+        </section>
+      </div>
+    </div>
+    <div class="details">
+      <article>
+        <ul class="details__contents">
+          <li class="details__region info">
+            <h2>Current timezone</h2>
+            <p id="timezone"></p>
+          </li>
+          <li class="details__day info">
+            <h2>Day of the year</h2>
+            <p id="year-day"></p>
+          </li>
+          <li class="details__week-day info">
+            <h2>Day of the week</h2>
+            <p id="week-day"></p>
+          </li>
+          <li class="details__week-number info">
+            <h2>Week number</h2>
+            <p id="week-number"></p>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
