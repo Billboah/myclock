@@ -66,12 +66,21 @@ async function getLocation() {
   );
   const json = await res.json();
   document.querySelector('.city').innerHTML = 'in ' + json.city + ', ' + json.country_code
+
+}
+getLocation()
+
+async function getTime() {
+  const res = await fetch(
+    `https://worldtimeapi.org/api/ip`
+  );
+  const json = await res.json();
   document.getElementById('timezone').innerHTML = json.timezone;
   document.getElementById('year-day').innerHTML= json.day_of_year;
   document.getElementById('week-day').innerHTML = json.day_of_week;
   document.getElementById('week-number').innerHTML = json.week_number;
 }
-getLocation()
+getTime()
 
 
 function showDetails() {
